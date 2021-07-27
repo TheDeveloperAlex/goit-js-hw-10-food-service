@@ -36,6 +36,6 @@ import galeryTpl from './tpl/galery.handlebars';
 
 galeryNode.innerHTML = galeryTpl(galery);
 
-
+// 
 
 
