@@ -9,4 +9,4 @@ var e,t=arguments[3];!function(t,r){"object"==typeof exports&&"object"==typeof m
 },{"handlebars/dist/handlebars.runtime":"pAws"}],"Focm":[function(require,module,exports) {
 "use strict";var e=c(require("./menu.json")),t=c(require("./tpl/galery.handlebars"));function c(e){return e&&e.__esModule?e:{default:e}}const s={LIGHT:"light-theme",DARK:"dark-theme"};let r=localStorage.getItem("theme");r||(r=s.LIGHT);const a=document.querySelector("#theme-switch-toggle"),l=document.body;l.classList.add(r),a.checked=r===s.DARK,a.addEventListener("change",e=>{console.log(e.target.checked),l.classList.remove(s.LIGHT),l.classList.remove(s.DARK),l.classList.add(e.target.checked?s.DARK:s.LIGHT),localStorage.setItem("theme",e.target.checked?s.DARK:s.LIGHT)});const o=document.querySelector(".js-menu");o.innerHTML=(0,t.default)(e.default);
 },{"./menu.json":"mA8c","./tpl/galery.handlebars":"TuEY"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-10-food-service/src.842f58f8.js.map
+//# sourceMappingURL=/goit-js-hw-10-food-service/src.4df75ae5.js.map
